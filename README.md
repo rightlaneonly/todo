@@ -1,5 +1,5 @@
 # UCF Map
-UCF Map is a full stack application that creates a better user experience for the UCF campus map. People who visit UCF and are unfamiliar with the campus may use UCF Map's website or app to find their way around campus. People can make a free account to enable various features, such as building and parking fullness, productivity tools, and schedule linkage.
+UCF Map is a full stack application that creates a better user experience for the UCF campus map. People who visit UCF and are unfamiliar with the campus may use UCF Map's website or app to find their way around campus. People can make a free account to enable various features such as building and parking fullness checker, productivity tools, and schedule linkage.
 
 ## Roles
 * Jessica   -   Front end
