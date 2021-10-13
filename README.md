@@ -5,7 +5,7 @@ UCF Map is a full stack application that creates a better user experience for th
 * Jessica   -   Front end
 * Nicolas   -   Front end
 * Manahil   -   Front end
-* Paul  -   Back end
+* Paul (@LambdaPaul)  -   Back end
 * Joel  -   Back end
 * Jaeden    -   Back end
 * Jerzy -   Project Manager (Front / Back)
