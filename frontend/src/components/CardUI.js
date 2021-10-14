@@ -12,27 +12,29 @@ function CardUI()
     const addCard = async event =>
     {
         event.preventDefault();
-        alert('addCard()');
+        alert('addCard()' + card.value);
     };
 
     const searchCard = async event =>
     {
         event.preventDefault();
-        alert('searchCard');
+        alert('searchCard()' + search.value);
     };
 
     return(
         <div id="accessUIDiv">
             <br />
-            <input type="text" id="searchText" placeholder="Card To Search For" />
+            <input type="text" id="searchText" placeholder="Card To Search For" 
+                ref={(c) => search = c}/>
             <button type="button" id="searchCardButton" class="buttons"
                 onClick={searchCard}> Search Card </button><br />
-            <span id="cardSearchResult"></span>
-            <p id="cardList"></p><br /><br />
-            <input type="text" id="cardText" placeholder="Card To Add" />
+            <span id="cardSearchResult"> {searchResults} </span>
+            <p id="cardList">{cardList}</p><br /><br />
+            <input type="text" id="cardText" placeholder="Card To Add" 
+                ref={(c) => card = c}/>
             <button type="button" id="addCardButton" class="buttons"
                 onClick={addCard}> Add Card </button><br />
-            <span id="cardAddResult"></span>
+            <span id="cardAddResult"> {message} </span>
         </div>
     );
 }

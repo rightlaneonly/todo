@@ -7,18 +7,18 @@ import CardPage from './pages/CardPage';
 
 function App() {
     return (
-            <Router >
+        <Router >
             <Switch>
-            <Route path="/" exact>
-            <LoginPage />
-            </Route>
-            <Route path="/cards" exact>
-            <CardPage />
-            </Route>
-            <Redirect to="/" />
+                <Route path="/" exact>
+                    <LoginPage />
+                </Route>
+                <Route path="/cards" exact>
+                    <CardPage />
+                </Route>
+                <Redirect to="/" />
             </Switch>
-            </Router>
-            );
+        </Router>
+    );
 }
 
 export default App;
