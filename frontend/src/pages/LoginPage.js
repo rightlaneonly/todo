@@ -1,17 +1,22 @@
 import React from 'react';
-
+import Card from 'react-bootstrap/Card';
+import Navigation from '../components/Navigation';
 import PageTitle from '../components/PageTitle';
 import Login from '../components/Login';
 
 const LoginPage = () =>
 {
-
         return(
-                     <div>
-                       <PageTitle />
-                       <Login />
-                     </div>
-                   );
+            <div className="Page">
+                <Navigation />
+                <Card id="loginCard">
+                    <Card.Body>     
+                        <PageTitle />
+                        <Login />
+                    </Card.Body>
+                </Card>
+            </div>
+        );
 };
 
 export default LoginPage;

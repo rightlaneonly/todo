@@ -38,14 +38,14 @@ function Login()
   };
 
     return(
-      <div id="loginDiv">
+      <div id="loginDiv" className="App">
         <form onSubmit={doLogin}>
           <span id="inner-title">PLEASE LOG IN</span><br />
-          <input type="text" id="loginName" placeholder="Username"
+          <input type="text" id="loginName" className="inFields" placeholder="Username"
             ref={(c) => loginName = c} /><br/>
-          <input type="password" id="loginPassword" placeholder="Password"
+          <input type="password" id="loginPassword" className="inFields" placeholder="Password"
             ref={(c) => loginPassword = c} /><br/>
-          <input type="submit" id="loginButton" class="buttons" value = "Do It"
+          <input type="submit" id="loginButton" value = "Do It"
             onClick={doLogin} />
           <span id="loginResult">{message}</span>
         </form>

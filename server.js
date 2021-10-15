@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
 const app = express();
+
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -151,7 +151,9 @@ app.post('/api/login', async (req, res, next) =>
         id = 1;    
         fn = 'Rick';    
         ln = 'Leinecker';  
-    }  else  {    
+    }  
+    else  
+    {    
         error = 'Invalid user name/password';
     }  
     var ret = { id:id, firstName:fn, lastName:ln, error:error};  
