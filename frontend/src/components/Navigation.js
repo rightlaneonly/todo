@@ -11,7 +11,7 @@ function Navigation()
         <div id='navi'>
             <Navbar variant="dark" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand href='/'>App Name</Navbar.Brand>
+                    <Navbar.Brand href='/'>Todo</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
@@ -20,8 +20,8 @@ function Navigation()
                             <Nav.Link href='/'>Pricing</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Button className="navBtn">Login</Button>
-                            <Button className="navBtn">Sign Up</Button>
+                            <Button href="/login" className="navBtn">Login</Button>
+                            <Button href="/signup" className="navBtn">Sign Up</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -4,7 +4,8 @@ import './App.css';
 
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
-import CardPage from './pages/CardPage';
+import SignUpPage from './pages/SignUpPage';
+import CanvasPage from './pages/CanvasPage';
 
 function App() {
     return (
@@ -16,8 +17,11 @@ function App() {
                 <Route path="/login" exact>
                     <LoginPage />
                 </Route>
+                <Route path="/signup" exact>
+                    <SignUpPage />
+                </Route>
                 <Route path="/cards" exact>
-                    <CardPage />
+                    <CanvasPage />
                 </Route>
                 <Redirect to="/" />
             </Switch>

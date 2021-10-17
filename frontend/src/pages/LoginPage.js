@@ -9,7 +9,7 @@ const LoginPage = () =>
         return(
             <div className="Page">
                 <Navigation />
-                <Card id="loginCard">
+                <Card id="formCard">
                     <Card.Body>     
                         <PageTitle />
                         <Login />
