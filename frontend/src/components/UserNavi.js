@@ -7,6 +7,14 @@ import Navbar from 'react-bootstrap/Navbar';
 //user Navigation
 function UserNavi()
 {
+    const doLogout = event =>
+    {
+        event.preventDefault();
+
+        alert('doLogout');
+        window.location.href = "/";
+    };
+
     return(
         <div id='navi'>
             <Navbar variant="dark" collapseOnSelect expand="lg">
@@ -15,10 +23,10 @@ function UserNavi()
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href='/'>New &#43;</Nav.Link>
+                            <Nav.Link href='/canvas'>New &#43;</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Button href="/login" className="navBtn">Log Out</Button>
+                            <Button type="button" id="logoutButton" className="navBtn" onClick={doLogout}> Log Out </Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

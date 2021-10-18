@@ -23,15 +23,21 @@
   color: #61dafb;
 }
 
-#canvas
+.buttonScheme
 {
-  padding: 2em;
-} 
+  background-color: #708090;
+  border-color: transparent;
+}
 
 .canvasCards
 {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 30px;
+}
+
+#cardCont{
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 #desc 
@@ -60,6 +66,7 @@
 
 #homeText
 {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: left;

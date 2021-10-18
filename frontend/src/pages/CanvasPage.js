@@ -16,7 +16,7 @@ const CanvasPage = () =>
             <UserNavi />
                 <PageTitle />
                 <LoggedInName />
-                <Container fluid>
+                <Container fluid id="cardCont">
                     <Row>
                         <Col>
                             <Card id="searchCard" className="canvasCards">

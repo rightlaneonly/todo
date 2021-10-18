@@ -80,13 +80,13 @@ function CardUI()
         <div id="accessUIDiv" className="App">
             <input type="text" id="searchText" className="inFields" placeholder="Card To Search For" 
                 ref={(c) => search = c}/><br/>
-            <Button type="button" id="searchCardButton"
+            <Button type="button" id="searchCardButton" className="buttonScheme"
                 onClick={searchCard}> Search Card </Button><br />
             <span id="cardSearchResult"> {searchResults} </span>
             <p id="cardList">{cardList}</p>
             <input type="text" id="cardText" className="inFields" placeholder="Card To Add" 
                 ref={(c) => card = c}/><br />
-            <Button type="button" id="addCardButton"
+            <Button type="button" id="addCardButton" className="buttonScheme"
                 onClick={addCard}> Add Card </Button><br />
             <span id="cardAddResult"> {message} </span>
         </div>
