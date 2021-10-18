@@ -13,7 +13,6 @@ const Front = () =>
                     <h1 id="tagline2" className="tagline">Better.</h1>
                 <h4 id="desc">Set up your schedule, personal reminders, and even customize your calendar; quick and easy.</h4>
             </div>
-            <img id="whiteBG" src={whiteBG} alt="background"/>
         </div>
     );
 }

@@ -20,7 +20,7 @@ function App() {
                 <Route path="/signup" exact>
                     <SignUpPage />
                 </Route>
-                <Route path="/cards" exact>
+                <Route path="/canvas" exact>
                     <CanvasPage />
                 </Route>
                 <Redirect to="/" />

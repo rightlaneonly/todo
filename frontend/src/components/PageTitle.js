@@ -3,7 +3,7 @@ import React from 'react';
 function PageTitle()
 {
    return(
-     <h1 id="title" className="App">Todo</h1>
+     <h1 id="title" className="App">ToDo</h1>
    );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button'
 
 function CardUI()
 {
@@ -76,18 +77,17 @@ function CardUI()
     };
 
     return(
-        <div id="accessUIDiv">
-            <br />
+        <div id="accessUIDiv" className="App">
             <input type="text" id="searchText" className="inFields" placeholder="Card To Search For" 
-                ref={(c) => search = c}/>
-            <button type="button" id="searchCardButton"
-                onClick={searchCard}> Search Card </button><br />
+                ref={(c) => search = c}/><br/>
+            <Button type="button" id="searchCardButton"
+                onClick={searchCard}> Search Card </Button><br />
             <span id="cardSearchResult"> {searchResults} </span>
             <p id="cardList">{cardList}</p>
             <input type="text" id="cardText" className="inFields" placeholder="Card To Add" 
-                ref={(c) => card = c}/>
-            <button type="button" id="addCardButton"
-                onClick={addCard}> Add Card </button><br />
+                ref={(c) => card = c}/><br />
+            <Button type="button" id="addCardButton"
+                onClick={addCard}> Add Card </Button><br />
             <span id="cardAddResult"> {message} </span>
         </div>
     );

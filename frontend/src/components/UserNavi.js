@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-// guest Navbar, need one for users after login
-function Navigation()
+//user Navigation
+function UserNavi()
 {
     return(
         <div id='navi'>
@@ -15,13 +15,10 @@ function Navigation()
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href='/'>Features</Nav.Link>
-                            <Nav.Link href='/'>Company</Nav.Link>
-                            <Nav.Link href='/'>Pricing</Nav.Link>
+                            <Nav.Link href='/'>New &#43;</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Button href="/login" className="navBtn">Login</Button>
-                            <Button href="/signup" className="navBtn">Sign Up</Button>
+                            <Button href="/login" className="navBtn">Log Out</Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -29,4 +26,4 @@ function Navigation()
         </div>
     );
 }
-export default Navigation;
+export default UserNavi;
