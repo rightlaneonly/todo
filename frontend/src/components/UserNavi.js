@@ -16,7 +16,7 @@ function UserNavi()
     };
 
     return(
-        <div id='navi'>
+        <div className='navi'>
             <Navbar variant="dark" collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href='/'>ToDo</Navbar.Brand>
