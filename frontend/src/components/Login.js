@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
+import {Link} from 'react-router-dom';
 
 function Login()
 {
@@ -40,15 +41,16 @@ function Login()
 
     return(
       <div id="loginDiv" className="App">
-        <Form onSubmit={doLogin}>
-          <span id="inner-title">PLEASE LOG IN</span><br />
+        <Form id="loginForm" className="form" onSubmit={doLogin}>
+          <span id="inner-title">Sign in to your account</span><br />
           <input type="text" id="loginName" className="inFields" placeholder="Username"
             ref={(c) => loginName = c} /><br/>
           <input type="password" id="loginPassword" className="inFields" placeholder="Password"
             ref={(c) => loginPassword = c} /><br/>
-          <input type="submit" id="loginButton" value = "Do It"
+          <input type="submit" id="loginButton" className="formBtn" value = "Continue"
             onClick={doLogin} />
           <span id="loginResult">{message}</span>
+          <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
         </Form>
      </div>
     );

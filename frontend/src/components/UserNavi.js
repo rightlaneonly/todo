@@ -4,23 +4,29 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-// guest Navbar, need one for users after login
-function Navigation()
+//user Navigation
+function UserNavi()
 {
+    const doLogout = event =>
+    {
+        event.preventDefault();
+
+        alert('doLogout');
+        window.location.href = "/";
+    };
+
     return(
         <div className='navi'>
-            <Navbar className="toDoBar"variant="dark" collapseOnSelect expand="lg" fixed="top">
+            <Navbar id="dashBar" className="toDoBar" variant="light" collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href='/'>ToDo</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href='/product'>Product</Nav.Link>
-                            <Nav.Link href='/'>Company</Nav.Link>
-                            <Nav.Link href='/'>Pricing</Nav.Link>
+                            <Nav.Link href='/canvas'>New &#43;</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Button href="/login" className="navBtn">Sign In</Button>
+                            <Button type="button" id="logoutButton" className="navBtn" onClick={doLogout}> Log Out </Button>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -28,4 +34,4 @@ function Navigation()
         </div>
     );
 }
-export default Navigation;
+export default UserNavi;
