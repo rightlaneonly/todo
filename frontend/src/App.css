@@ -40,7 +40,7 @@
   padding-right: 3em;
 }
 
-#desc 
+.desc 
 {
   display: flex;
   flex-direction: column;
@@ -71,8 +71,8 @@
   flex-direction: column;
   justify-content: left;
   z-index: 10;
-  position: relative;
-  margin-top: 3em;
+  position: absolute;
+  margin-top: 7em;
   margin-left: 4em;
 }
 
@@ -127,9 +127,33 @@
   background: linear-gradient(0.19deg, #BBD2C5 -1.76%, #536976 99.85%);
 }
 
+.pageExtended{
+  position: relative;
+  width: 100vw;
+  height: 200vh;
+
+  background: linear-gradient(0.19deg, #BBD2C5 -1.76%, #536976 99.85%);
+}
+
+#productText
+{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  z-index: 10;
+  margin-top: 110vh;
+  margin-left: 4em;
+}
+
 .tagline
 {
   font-size: 8vw;
+}
+
+#productline
+{
+ font-size: 6vw;
 }
 
 #whiteBG
