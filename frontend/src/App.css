@@ -31,13 +31,25 @@
 
 .canvasCards
 {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 30px;
 }
 
 #cardCont{
   padding-left: 3em;
   padding-right: 3em;
+}
+
+.dash
+{
+  background-color: #E1E1E7;
+  width: 100vw;
+  height: 100vh;
+}
+
+#dashBar
+{
+  color: #7F7E87;
 }
 
 .desc 
@@ -50,17 +62,11 @@
   width: 40vw;
 }
 
-#front
+#landing
 {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  position: relative;
-}
-
-#frontnav
-{
-  z-index: 11;
   position: relative;
 }
 
@@ -78,29 +84,44 @@
 
 .inFields
 {
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 1px solid black;
-  
-  margin-bottom: 10px;
-  width: 50%;
+  border-color: transparent;
+  border-radius: 20px;
+  background-color: #E1E1E7;
+  text-align: center;
+}
+
+.formBtn
+{
+  background-color: #7F7E87;
+  border-color: transparent;
+  border-radius: 20px;
+  color: white;
 }
 
 #formCard
 {
+  background-color: rgba(255, 255, 255, 0.85);
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
+  margin-top: 7em;
+  border-radius: 20px;
+  padding: 2em 3em 2em;
 }
 
 #loggedInDiv
 {
   margin-bottom: 1em;
+}
+
+.form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
  .navi 
@@ -127,12 +148,13 @@
   background: linear-gradient(0.19deg, #BBD2C5 -1.76%, #536976 99.85%);
 }
 
-.pageExtended{
+.pagesolid
+{
   position: relative;
   width: 100vw;
   height: 200vh;
 
-  background: linear-gradient(0.19deg, #BBD2C5 -1.76%, #536976 99.85%);
+  background-color: #B0B9B7;
 }
 
 #productText
@@ -142,13 +164,18 @@
   flex-direction: column;
   justify-content: left;
   z-index: 10;
-  margin-top: 110vh;
+  margin-top: 7em;
   margin-left: 4em;
 }
 
 .tagline
 {
   font-size: 8vw;
+}
+
+.toDoBar
+{
+  padding: 2em;
 }
 
 #productline

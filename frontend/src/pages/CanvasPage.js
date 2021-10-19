@@ -12,7 +12,7 @@ import CardUI from '../components/CardUI';
 const CanvasPage = () =>
 {
     return(
-        <div id="canvas" className="Page">
+        <div id="canvas" className="dash">
             <UserNavi />
                 <PageTitle />
                 <LoggedInName />

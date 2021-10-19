@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import CanvasPage from './pages/CanvasPage';
+import ProductPage from './pages/ProductPage';
 
 function App() {
     return (
@@ -19,6 +20,9 @@ function App() {
                 </Route>
                 <Route path="/signup" exact>
                     <SignUpPage />
+                </Route>
+                <Route path="/product">
+                    <ProductPage />
                 </Route>
                 <Route path="/canvas" exact>
                     <CanvasPage />

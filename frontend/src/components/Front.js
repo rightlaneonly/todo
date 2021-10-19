@@ -5,8 +5,6 @@ const Front = () =>
 {
     return(
         <div id="front">
-            
-            
             <div id="homeText">
                 <h1 id="tagline1" className="tagline">Organize Yourself </h1>
                 <h1 id="tagline2" className="tagline">Better.</h1>
